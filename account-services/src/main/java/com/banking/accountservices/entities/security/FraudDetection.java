@@ -14,7 +14,7 @@ import com.banking.accountservices.entities.transactions.Transaction;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@Builder 
 public class FraudDetection {
 
     @Id
