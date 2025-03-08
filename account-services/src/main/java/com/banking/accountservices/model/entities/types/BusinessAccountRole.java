@@ -1,6 +1,6 @@
 package com.banking.accountservices.model.entities.types;
 
-public enum AccountRole {
+public enum BusinessAccountRole {
     OWNER,
     MANAGER,
     EMPLOYEE,

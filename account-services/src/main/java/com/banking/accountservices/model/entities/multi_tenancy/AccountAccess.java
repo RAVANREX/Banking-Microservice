@@ -6,7 +6,7 @@ import lombok.*;
 import java.util.UUID;
 
 import com.banking.accountservices.model.entities.core_account_management.Account;
-import com.banking.accountservices.model.entities.types.AccountRole;
+import com.banking.accountservices.model.entities.types.BusinessAccountRole;
 
 @Entity
 @Table(name = "account_access")
@@ -31,7 +31,7 @@ public class AccountAccess {
 
     @ManyToOne
     @JoinColumn(name = "role_id", nullable = false)
-    private AccountRole role;
+    private BusinessAccountRole role;
 
     @Column(nullable = false)
     private Boolean isActive = true;
