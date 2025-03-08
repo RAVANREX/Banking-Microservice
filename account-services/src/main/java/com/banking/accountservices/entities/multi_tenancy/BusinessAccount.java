@@ -4,6 +4,8 @@ import lombok.*;
 
 import java.util.UUID;
 
+import com.banking.accountservices.entities.types.BusinessType;
+
 @Entity
 @Table(name = "business_accounts")
 @Getter

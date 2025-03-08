@@ -6,6 +6,7 @@ import lombok.*;
 import java.util.UUID;
 
 import com.banking.accountservices.entities.core_account_management.Account;
+import com.banking.accountservices.entities.types.AccountRole;
 
 @Entity
 @Table(name = "account_access")

@@ -1,4 +1,4 @@
-package com.banking.accountservices.entities.preferences;
+package com.banking.accountservices.entities.types;
 
 public enum NotificationType {
     SMS,

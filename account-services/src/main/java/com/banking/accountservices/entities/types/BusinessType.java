@@ -1,4 +1,4 @@
-package com.banking.accountservices.entities.multi_tenancy;
+package com.banking.accountservices.entities.types;
 
 public enum BusinessType {
     LLC,

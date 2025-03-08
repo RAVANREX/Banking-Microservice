@@ -6,7 +6,7 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-import com.banking.accountservices.entities.core_account_management.AccountType;
+import com.banking.accountservices.entities.types.AccountType;
 
 @Entity
 @Table(name = "interest_rates")

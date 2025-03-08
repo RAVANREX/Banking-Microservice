@@ -6,6 +6,9 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
+import com.banking.accountservices.entities.types.AccountStatus;
+import com.banking.accountservices.entities.types.AccountType;
+
 @Entity
 @Table(name = "accounts")
 @Getter

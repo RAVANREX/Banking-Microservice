@@ -1,4 +1,4 @@
-package com.banking.accountservices.entities.transactions;
+package com.banking.accountservices.entities.types;
 
 public enum TransactionStatus {
     PENDING,

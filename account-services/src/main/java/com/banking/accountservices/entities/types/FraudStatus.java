@@ -1,4 +1,4 @@
-package com.banking.accountservices.entities.security;
+package com.banking.accountservices.entities.types;
 
 public enum FraudStatus {
     UNDER_INVESTIGATION,

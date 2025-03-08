@@ -1,4 +1,4 @@
-package com.banking.accountservices.entities.core_account_management;
+package com.banking.accountservices.entities.types;
 
 public enum AccountStatus {
     ACTIVE,

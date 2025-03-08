@@ -7,6 +7,8 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 import com.banking.accountservices.entities.core_account_management.Account;
+import com.banking.accountservices.entities.types.TransactionStatus;
+import com.banking.accountservices.entities.types.TransactionType;
 
 @Entity
 @Table(name = "transactions")
