@@ -27,15 +27,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-@Data
-@SQLDelete(sql = "UPDATE User SET deleted = true WHERE id = ?")
-@Where(clause = "deleted = false")
-@Table(indexes = {
-    @Index(name = "idx_user_email", columnList = "email"),
-    @Index(name = "idx_user_phone", columnList = "phoneNumber")
+@Table(name = "users", indexes = {
+        @Index(name = "idx_username", columnList = "username"),
+        @Index(name = "idx_email", columnList = "email"),
+        @Index(name = "idx_phoneNumber", columnList = "phoneNumber"),
+        @Index(name = "idx_status", columnList = "status"),
+        @Index(name = "idx_createdOn", columnList = "createdOn"),
+        @Index(name = "idx_updatedOn", columnList = "updatedOn"),
+        @Index(name = "idx_deleted", columnList = "deleted")
 })
 public class User {
     @Id
