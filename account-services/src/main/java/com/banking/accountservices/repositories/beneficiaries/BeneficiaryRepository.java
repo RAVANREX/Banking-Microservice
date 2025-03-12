@@ -5,8 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.banking.accountservices.models.entities.beneficiaries.Beneficiary;
 
-public interface BeneficiaryRepository extends JpaRepository<Beneficiary, Long> {
 
+
+public interface BeneficiaryRepository extends JpaRepository<Beneficiary, Long> {
     
+        
 
 }
