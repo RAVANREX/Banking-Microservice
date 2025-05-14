@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.util.UUID;
 
-import com.banking.accountservices.models.entities.core_account_management.Account;
+import com.banking.accountservices.models.entities.coreAccountManagement.Account;
 
 @Entity
 @Table(name = "account_freeze")
@@ -20,8 +20,6 @@ public class AccountFreeze {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID freezeId;
 
-    @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Column(nullable = false)

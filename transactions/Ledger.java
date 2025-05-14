@@ -19,8 +19,6 @@ public class Ledger {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID ledgerId;
 
-    @ManyToOne
-    @JoinColumn(name = "transaction_id", nullable = false)
     private Transaction transaction;
 
     @Column(nullable = false, precision = 15, scale = 2)

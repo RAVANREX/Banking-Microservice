@@ -1,15 +1,11 @@
 package com.banking.accountservices.models.entities.beneficiaries;
 
-
-
-    
-
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.UUID;
 
-import com.banking.accountservices.models.entities.core_account_management.Account;
+import com.banking.accountservices.models.entities.coreAccountManagement.Account;
 
 @Entity
 @Table(name = "linked_accounts")
@@ -24,8 +20,6 @@ public class LinkedAccount {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID linkedAccountId;
 
-    @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Column(nullable = false, length = 100)

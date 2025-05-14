@@ -6,7 +6,7 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-import com.banking.accountservices.models.entities.core_account_management.Account;
+import com.banking.accountservices.models.entities.coreAccountManagement.Account;
 
 @Entity
 @Table(name = "auto_debit")
@@ -21,8 +21,6 @@ public class AutoDebit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID autoDebitId;
 
-    @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Column(nullable = false, length = 100)

@@ -5,7 +5,7 @@ import lombok.*;
 
 import java.util.UUID;
 
-import com.banking.accountservices.models.entities.core_account_management.Account;
+import com.banking.accountservices.models.entities.coreAccountManagement.Account;
 import com.banking.accountservices.models.entities.types.BusinessAccountRole;
 
 @Entity
@@ -15,14 +15,12 @@ import com.banking.accountservices.models.entities.types.BusinessAccountRole;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class AccountAccess {
+public class BusinessAccountAccess {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID accessId;
 
-    @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Enumerated(EnumType.STRING)

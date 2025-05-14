@@ -21,8 +21,6 @@ public class FraudDetection {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID fraudId;
 
-    @ManyToOne
-    @JoinColumn(name = "transaction_id", nullable = false)
     private Transaction transaction;
 
     @Column(nullable = false)

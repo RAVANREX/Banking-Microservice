@@ -6,7 +6,7 @@ import lombok.*;
 import java.math.BigDecimal;
 import java.util.UUID;
 
-import com.banking.accountservices.models.entities.core_account_management.Account;
+import com.banking.accountservices.models.entities.coreAccountManagement.Account;
 
 @Entity
 @Table(name = "transaction_limits")
@@ -21,8 +21,6 @@ public class TransactionLimit {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID limitId;
 
-    @ManyToOne
-    @JoinColumn(name = "account_id", nullable = false)
     private Account account;
 
     @Column(nullable = false, precision = 15, scale = 2)
